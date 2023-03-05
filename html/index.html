@@ -5,43 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/Style.css" />
   </head>
-  <body>
-    <header>
-      <div>
-        <figure>
-          <img src="/img/Header.jpg" width="980" height="540 alt="me" />
-          <figcaption>
-            A random picture, because I would like to maintain my privacy and
-            let my code speak for me, instead of images.
-          </figcaption>
-        </figure>
-      </div>
-      <h1 class="firstname">Irazhap</h1>
-      <h2 class="lastname">Manapov</h2>
-      <nav id="nav">
-        <a href="#kontakt">Kontakt</a>
-        <a href="#">Über Mich</a>
-      </nav>
-    </header>
 
-    <main>
-      <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p><strong>Telefonnummer:</strong></p>
-        <a href="https://github.com/Irazhap">GitHub</a>
-        <a href="https://www.linkedin.com/in/irazhapmanapov/">LinkedIn</a>
-        <a href="https://codesandbox.io/">CodeSandbox</a>
-      </section>
-      <section id="Über Mich">
-        <h2>Über Mich</h2>
-        <p>
-          Hi there! Welcome to my personal website. Here is gathered the most
-          important information about me. If you want to work with me or get to
-          know me, please don't hesitate to get in contact.
-        </p>
-      </section>
-    </main>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="navigation__menu">
+            <li class="navigation__link">
+              <a href="#about">About</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#hobbys">Hobbys</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="head_banner">
+          <img src="/img/Header.jpg" width="980" height="540 alt="me" />
+        </div>
+        <h1 class="firstname">Irazhap</h1>
+        <h2 class="lastname">Manapov</h2>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            Hi, ich bin Irazhap.
+            <br />
+            Mit 33 Jahren entschied ich mich den weg in die Programmierwelt zu
+            setzen und nehme jetzt bei
+            <a href="https://www.neuefische.de" target="_blank"
+              ><span class="neuefische">NeueFische</span></a
+            >
+            am Webdeveloper Bootcamp teil.
+          </p>
+          <a href="https://github.com/Irazhap">GitHub</a>
+          <a href="https://www.linkedin.com/in/irazhapmanapov/">LinkedIn</a>
+          <a href="https://codesandbox.io/">CodeSandbox</a>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <p>
+            In meiner Freizeit habe ich etwas Erfahrung sammeln können, in Programmen wie
+            <ul>
+              <li>Fruity Loops Studio</li>
+              <li>Vegas Movie Studio - Videoschnitt</li>
+              <li>Maxon Cinema 4D</li>
+              </ul>
+              und etwas
+              <ul>
+                <li>Photoshop</li>
+                <li>Gimp</li>
+              </ul>
+          </p>
+        </section>
+
+        <section id="hobbys">
+          <h2>Hobbys</h2>
+          <p>Meine Hobbys sind:</p>
+          <ul class="hobby_list">
+            <li>Fahrrad fahren</li>
+            <li>Angeln</li>
+            <li>Wandern</li>
+            <li>Pilze sammeln</li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
