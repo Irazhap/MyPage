@@ -22,6 +22,12 @@
       format("svg"); /* Legacy iOS */
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto;
   font-size: 1rem;
@@ -31,21 +37,69 @@ body {
   color: #a3a3a3;
 }
 
-a {
-  text-decoration: none;
-  color: #636363;
+.container {
+  position: relative;
+  width: 980px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .firstname {
   position: absolute;
-  top: 130px;
-  left: 330px;
+  top: 220px;
+  left: 13px;
   font-size: 50px;
 }
 
 .lastname {
   position: absolute;
-  top: 130px;
-  left: 100px;
+  top: 205px;
+  left: 10px;
   font-size: 100px;
+}
+
+.navigation__menu {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__link {
+  background-color: #4a4543;
+  color: #a3a3a3;
+  padding: 5px 14px;
+  border-radius: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+section {
+  padding-left: 10px;
+  border-left: 3px solid #a3a3a3;
+  width: 600px;
+}
+
+.neuefische {
+  color: #ff4a11;
+}
+.neuefische:hover {
+  color: #4a4543;
+}
+
+#skills {
+  margin-top: 100px;
+}
+
+#hobbys {
+  margin-top: 100px;
+}
+
+.hobby_list {
+  list-style: disc;
 }
